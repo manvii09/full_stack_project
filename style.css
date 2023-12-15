@@ -1,0 +1,661 @@
+/*
+    font-family: 'Baloo Bhai 2', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Monoton', cursive;
+    font-family: 'Poppins', sans-serif;
+ */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+/*
+==========
+Utilies
+========== 
+*/
+
+.box {
+    z-index: 999;
+    background-color: #fff;
+    position: absolute;
+    top: 64%;
+    left: 24%;
+    padding: 3rem;
+    text-align: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.dotted-border {
+    height: 100%;
+    width: 100%;
+    padding: 1.5rem;
+    border: 1px dotted black;
+}
+
+.box h1 {
+    font-size: 7.2rem;
+    font-family: 'Monoton', cursive;
+}
+
+.box p {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.pmt {
+    margin-top: 4rem;
+}
+
+.pinky {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #e5383b;
+}
+
+.red {
+    color: #e5383b;
+    margin-right: .5rem;
+}
+
+.left {
+    margin-left: .8rem;
+}
+
+.right {
+    margin-right: .8rem;
+}
+
+.primary-btn {
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1.2rem 3rem;
+    color: white;
+    font-weight: 500;
+    background-color: #ef233c;
+    border: 2px solid #ef233c;
+    border-radius: .3rem;
+    box-shadow: 0 10px 10px 0 rgb(239, 35, 60, .36);
+    transition: all .3s;
+}
+
+.primary-btn:hover {
+    cursor: pointer;
+    background-color: #cd2127;
+    border: 2px solid #cd2127;
+    box-shadow: 0 10px 20px 0 rgb(239, 35, 60, .5);
+}
+
+.secondary-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1.2rem 3rem;
+    color: white;
+    font-weight: 500;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: .3rem;
+    /* box-shadow: 0 10px 10px 0 rgb(239, 35, 60, .36); */
+    transition: all .3s;
+}
+
+.secondary-btn:hover {
+    border: 2px solid black;
+    color: black;
+    background: none;
+}
+
+.tertiary-btn {
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1.2rem 3rem;
+    transition: all .3s;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: white;
+    /* background: linear-gradient(to right bottom, #ef233c, #ef233c); */
+}
+
+/*
+==========
+Navbar
+========== 
+*/
+
+.navbar {
+    /* background-color: #ffdbe4; */
+    /* box-shadow: rgba(239, 35, 60, .1) 0px 10px 24px; */
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+    width: 100%;
+    height: 10%;
+    
+}
+
+.nav-logo-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 14%;
+    height: 100%;
+}
+
+.nav-logo-text {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #e5383b;
+}
+
+.nav-mid {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40%;
+    height: 100%;
+}
+
+.nav-mid ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-mid ul li {
+    margin: 0.5rem 2.3rem;
+}
+
+.nav-mid ul li a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 2rem;
+    color: black;
+}
+
+.nav-right {
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    height: 100%;
+}
+
+.nav-btns {
+    padding: 1rem;
+    font-size: 2rem;
+    color: #5c5b5b;
+    outline: none;
+    background: none;
+    border: none;
+}
+
+.nav-btns:hover {
+    cursor: pointer;
+}
+
+/*
+===============
+Hero Container
+===============
+*/
+
+.hero {
+    /* border: 1px solid black; */
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 90%;
+}
+
+.hero-left {
+    padding: 0rem 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+
+.text-box {
+    line-height: 6.8rem;
+    font-size: 3.2rem;
+    margin: 2rem;
+}
+
+.text-box span {
+    font-size: 7.4rem;
+}
+
+.text-box p {
+    color: #706f7b;
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    /* border: 1px solid black; */
+    margin: 1rem 13rem;
+}
+
+.hero-right {
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+
+.hero-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/*
+============
+Book
+============ 
+*/
+
+.book {
+    font-family: 'Poppins', sans-serif; 
+    padding: 2rem 4rem;
+    background-image: url('../assets/asset\ 15.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 5rem 10rem;
+    width: 85%;
+    height: 50vh;
+}
+
+.book h2 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.form-box {
+    width: 100%;
+    height: 70%;
+}
+
+.form-box form {
+    height: 100%;
+    margin-top: .5rem;
+    padding: .3rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.form-col-div {
+    padding: .3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 2rem;
+    font-weight: 600;
+    /* border: 1px solid red; */
+}
+
+.form-col-div .input {
+    color: #5c5b5b;
+    
+    margin: .1rem;
+    background-color: white;
+    border: .1px solid rgb(186, 186, 186);
+    border-radius: 1rem;
+    height: 35%;
+}
+
+.form-col-div .input input[type=text], input[type=datetime-local], input[type=number], textarea {
+    padding: 0rem 1rem;
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+/*
+==========
+Services
+========== 
+*/
+
+.services {
+    position: relative;
+    display: flex;
+    gap: 12rem;
+    margin-top: 10rem;
+    padding: 3rem 12rem;
+    width: 100%;
+    height: 100%;
+}
+
+.services__Left {
+    height: 90%;
+    width: 30%;
+}
+
+.services__Left img {
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+    animation: LazyScaleUp 10s linear infinite;
+}
+
+.services__right {
+    font-family: 'Poppins', sans-serif; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+    width: 50%;
+    padding: .5rem;
+}
+
+.services__right h2 {
+    color: #ef233c;
+    font-size: 5rem;
+}
+
+.services__right p {
+    margin-top: 4rem;
+    font-size: 1.4rem;
+    color: rgb(88, 88, 88);
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        transform: translateY(-5px) scale(1.05);
+
+    }
+
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}
+@keyframes LazyScaleUp {
+    0% {
+        transform:  scale(1);
+    }
+
+    50% {
+        transform:  scale(1.1);
+
+    }
+
+    100% {
+        transform:  scale(1);
+    }
+}
+
+/*
+============
+Facilities
+============ 
+*/
+
+.facilities {
+    margin-top: 10rem;
+    padding: 5rem 12rem;
+}
+
+.facilities__flex {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 8rem;
+}
+
+.facilities__flex__card {
+    display: flex;
+    gap: 1rem;
+}
+
+.facilities__flex__card__left {
+    font-family: 'Monoton', cursive;
+}
+
+.facilities__flex__card__left h1 {
+    color: #ef233c;
+    margin-right: 3rem;
+    font-size: 4.2rem;
+}
+
+.facilities__flex__card__right h1 {
+    margin-top: 1rem;
+    line-height: 1;
+    font-size: 2.2rem;
+}
+
+.facilities__flex__card__right p {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    text-align: left;
+    color: rgb(88, 88, 88);
+
+}
+
+/*
+===========
+Dishes
+=========== 
+*/
+
+.dishes {
+    margin-top: 5rem;
+    padding: 5rem 12rem;
+}
+
+.dishes h1 {
+    font-size: 5rem;
+    margin-bottom: 1.2rem;
+}
+
+.dishes p {
+    font-size: 1.8rem;
+    color: rgb(146, 146, 146);
+}
+
+.dishes-cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 12rem;
+    margin-top: 3rem;
+}
+
+.dish-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.dish-img {
+    height: 30rem;
+}
+
+.dish-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .75s ease;
+}
+
+.dish-img img:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.dish-desc {
+    background-color: #FFF5E0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dish-desc p {
+    padding: .5rem 0 .5rem 1rem;
+    font-size: 3rem;
+    color: black;
+}
+
+.dish-price {
+    font-size: 3rem;
+    color: white;
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5383b;
+}
+
+.dish-detail {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    color: rgb(146, 146, 146);
+}
+
+.dish-rating {
+    margin-top: 1.5rem;
+}
+
+.menu-btn {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+/*
+===========
+Reviews
+=========== 
+*/
+
+.reviews {
+    margin-top: 10rem;
+    padding: 5rem 12rem;
+}
+
+.reviews h2 {
+    font-size: 5rem;
+    margin-bottom: 1.2rem;
+    line-height: 4.5rem;
+}
+
+.reviews p {
+    font-size: 1.8rem;
+    color: rgb(146, 146, 146);
+}
+
+.review-cards {
+    margin-top: 3rem;
+    display: flex;
+    gap: 5rem;
+    justify-content: space-between;
+}
+
+.review-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-card h5 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.review-card p {
+    margin-top: 1rem;
+}
+
+.review {
+    font-size: 1.6px;
+    color: rgb(146, 146, 146);
+}
+
+.cust-pro {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.cust-pro p {
+    font-size: 2rem;
+    font-weight: 500;
+    color: black;
+    margin: 0;
+}
+
+.pro-photo {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+    border: 1px solid #ef233c;
+}
+
+/*
+===============
+Footer
+===============
+*/
+
+footer {
+    height: 20%;
+    margin-top: 5rem;
+    background-color: #ef233c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font-size: 2.8rem;
+    color: white;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
